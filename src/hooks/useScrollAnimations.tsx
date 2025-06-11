@@ -25,6 +25,16 @@ export const useScrollAnimations = () => {
     const services = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
+
+        // Check if mobile
+        const isMobile = window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        // if (isMobile) {
+        //     // Just set up basic styles without animations
+        //     gsap.set([about.current, hardware.current, software.current, services.current], { opacity: 1 });
+        //     return;
+        // }
+
         let isResizing = false;
 
         const createAnimations = () => {
@@ -50,20 +60,22 @@ export const useScrollAnimations = () => {
             ];
             // const normalizedSnapPoints = snapPointsInPx.map(px => px / totalScrollHeight);
 
-            gsap.timeline()
-                .set(".scroll-down", { opacity: 0 })
-                .to(".scroll-down", {
-                    opacity: 0.7,
-                    duration: 1,
-                    delay: 2
-                })
-                .to(".scroll-down", {
-                    opacity: 0.3,
-                    duration: 1,
-                    yoyo: true,
-                    repeat: -1,
-                    ease: "power2.inOut"
-                });
+            if (!isMobile) {
+                gsap.timeline()
+                    .set(".scroll-down", { opacity: 0 })
+                    .to(".scroll-down", {
+                        opacity: 0.7,
+                        duration: 1,
+                        delay: 2
+                    })
+                    .to(".scroll-down", {
+                        opacity: 0.3,
+                        duration: 1,
+                        yoyo: true,
+                        repeat: -1,
+                        ease: "power2.inOut"
+                    });
+            }
 
             ScrollTrigger.create({
                 trigger: heroSectionRef.current,

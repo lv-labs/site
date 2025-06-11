@@ -43,6 +43,7 @@ function AppContent() {
     <>
       <Cursor />
       <main ref={mainRef}>
+        <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }} ></div>
         <div ref={heroSectionRef}>
           <HeroSection />
           <div className='scroll-container'>
@@ -50,10 +51,11 @@ function AppContent() {
               <ChevronsDown className="animate-bounce h-6 w-6 text-color-text" />
             </div>
           </div>
-          <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }}></div>
         </div>
 
         <section ref={panelsContainerRef} className='panel-container'>
+          <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }} ></div>
+
           <div ref={panel1Ref} className="panel">
             <div ref={about} className='panel-header'>
               ABOUT
@@ -81,34 +83,31 @@ function AppContent() {
                 <img src={performImage} alt="me performing" />
               </div>
             </div>
-            <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }}></div>
           </div>
 
           <div ref={panel2Ref} className="panel">
             <div ref={hardware} className='panel-header'>
               HARDWARE
             </div>
-            <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }}></div>
           </div>
 
           <div ref={panel3Ref} className="panel">
             <div ref={software} className='panel-header'>
               SOFTWARE
             </div>
-            <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }}></div>
           </div>
 
           <div ref={panel4Ref} className="panel">
             <div ref={services} className='panel-header'>
               SERVICES
             </div>
-            <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }}></div>
           </div>
         </section>
 
         <section ref={footerSectionRef} className='footer-container'>
+          <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }} ></div>
+
           <Footer />
-          <div className='noise-overlay' style={{ ['--noise-img' as any]: `url(${noise})` }}></div>
         </section>
 
         <footer className="fixed bottom-4 right-4">

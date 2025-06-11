@@ -3,6 +3,22 @@ body {
   overflow-x: hidden;
 }
 
+.noise-overlay {
+  background-image: var(--noise-img);
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  filter: none;
+}
+
+.dark .noise-overlay {
+  filter: invert();
+}
+
 .hero-container {
   position: relative;
   padding: 4rem;
@@ -16,6 +32,8 @@ body {
 .hero-logo {
   font-family: 'zelda', sans-serif;
   font-size: clamp(4rem, 12vw, 15rem);
+  white-space: nowrap;
+  overflow: visible;
 }
 
 
@@ -32,21 +50,7 @@ body {
   justify-content: center
 }
 
-.noise-overlay {
-  background-image: var(--noise-img);
-  position: absolute;
-  inset: 0;
-  background-repeat: repeat;
-  opacity: 1;
-  pointer-events: none;
-  z-index: 1;
-  overflow: hidden;
-  filter: none;
-}
 
-.dark .noise-overlay {
-  filter: invert();
-}
 
 .panel-container {
   display: flex;
