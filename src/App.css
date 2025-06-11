@@ -33,7 +33,7 @@ body {
 }
 
 .noise-overlay {
-  background-image: url('./noise.webp');
+  background-image: var(--noise-img);
   position: absolute;
   inset: 0;
   background-repeat: repeat;

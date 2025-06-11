@@ -4,9 +4,6 @@ export function Footer() {
             <div>
                 FOOTER
             </div>
-            <div className="noise-overlay">
-
-            </div>
         </div>
     )
 }

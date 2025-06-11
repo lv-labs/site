@@ -6,7 +6,7 @@ import { defineConfig } from "vite"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/site/', // Replace with your repo name
+  base: '/', // Replace with your repo name
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

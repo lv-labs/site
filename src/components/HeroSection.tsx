@@ -54,7 +54,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="noise-overlay"></div>
     </div>
 
   );
