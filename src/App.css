@@ -1,0 +1,124 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+.hero-container {
+  position: relative;
+  padding: 4rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-logo {
+  font-family: 'zelda', sans-serif;
+  font-size: clamp(4rem, 12vw, 15rem);
+}
+
+
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  justify-content: center
+}
+
+.noise-overlay {
+  background-image: url('./noise.webp');
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  filter: none;
+}
+
+.dark .noise-overlay {
+  filter: invert();
+}
+
+.panel-container {
+  display: flex;
+  width: calc(100vw * 4);
+  height: 100vh;
+
+}
+
+.footer-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.panel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.panel-header {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  opacity: 0;
+  color: var(--muted-foreground);
+}
+
+
+.about-text {
+  position: absolute;
+  font-size: 0.9rem;
+  font-family: monospace;
+  color: var(--muted-foreground);
+  width: 50vw;
+  bottom: 4rem;
+  left: 6rem;
+}
+
+.desk-image {
+  position: absolute;
+  top: 10rem;
+  right: 6rem;
+  max-width: 50vw;
+  max-height: 25vh;
+  height: auto;
+}
+
+.perform-image {
+  position: absolute;
+  top: 24rem;
+  left: 2rem;
+  max-width: 30vw;
+  max-height: 25vh;
+  height: auto;
+}
+
+
+
+
+@font-face {
+  font-family: 'zelda';
+  src: url('./assets/zeldadxt.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="215.58231mm"
+   height="36.829956mm"
+   viewBox="0 0 215.58231 36.829956"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="269.33859"
+       y="611.19147"
+       width="3263.1406"
+       height="787.29742"
+       id="rect1" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(119.49361,-78.737074)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-199.96341,-98.519764)"
+       id="text1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:200px;font-family:'Zelda DX TT (BRK)';-inkscape-font-specification:'Zelda DX TT (BRK)';text-align:start;letter-spacing:-15px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);fill:#ffffff;fill-opacity:1"><tspan
+         x="269.33789"
+         y="791.74696"
+         id="tspan1">lv_labs</tspan></text>
+  </g>
+</svg>
