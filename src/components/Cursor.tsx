@@ -27,8 +27,8 @@ const Cursor: React.FC = () => {
                 position: "fixed",
                 left: 0,
                 top: 0,
-                width: "60px",
-                height: "60px",
+                width: "30px",
+                height: "30px",
                 borderRadius: "50%",
                 pointerEvents: "none",
                 background: "white", // White fill, no border

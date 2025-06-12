@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .noise-overlay {
   background-image: var(--noise-img);
   position: absolute;
@@ -22,7 +23,7 @@ body {
 .hero-container {
   position: relative;
   padding: 4rem;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,17 +60,7 @@ body {
 
 }
 
-.footer-container {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: bold;
-}
+
 
 .panel {
   width: 100vw;
@@ -84,8 +75,19 @@ body {
   left: 2rem;
   font-size: 4rem;
   font-weight: bold;
-  opacity: 0;
+  opacity: 1;
   color: var(--muted-foreground);
+}
+
+.panel-text {
+  position: relative;
+  top: 10rem;
+  left: 1rem;
+  width: 50vw;
+  font-size: 0.9rem;
+  font-family: monospace;
+  color: var(--muted-foreground);
+  text-transform: lowercase;
 }
 
 
@@ -97,6 +99,36 @@ body {
   width: 50vw;
   bottom: 4rem;
   left: 6rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.footer-title {
+  position: relative;
+  justify-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  opacity: 1;
+  color: var(--muted-foreground);
+}
+
+.footer-text {
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: monospace;
+  color: var(--muted-foreground);
 }
 
 .desk-image {
@@ -116,9 +148,6 @@ body {
   max-height: 25vh;
   height: auto;
 }
-
-
-
 
 @font-face {
   font-family: 'zelda';
