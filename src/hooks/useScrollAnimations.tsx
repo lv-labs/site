@@ -34,7 +34,7 @@ export const useScrollAnimations = () => {
 
         const master_tl = gsap.timeline({
             scrollTrigger: {
-                markers: true,
+                markers: false,
                 trigger: heroSectionRef.current,
                 start: 'top top',
                 end: () => `+=${totalScrollHeight}`,
